@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: grey;
+        color: white;
+      }
+      .ok{
+        border: 2px solid;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 12px;
+
+      }
+      .lis{
+        list-style: disc;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="ok">JAVA SCRIPT</h1>
+    <div>
+      <ol>
+        <h2>Features of Js.</h2>
+        <li>
+          Dynamically Typed Language : Without mentioning data type we can
+          assign the variable.
+        </li>
+        <li>
+          Object-Oriented-Programming : We use only three
+          <ul class="lis">
+            <li>Inheritance</li>
+            <li>Polymorphism</li>
+            <li>Encapsulation</li>
+          </ul>
+        </li>
+        <li>
+          Functional Programming : Follows functional way of programming -
+          follows call back , higher order and closure function's.
+        </li>
+        <li>
+          First-Class Function : Function in Js are first class because , they
+          can be pass an arguments and returns another function and can store in
+          data structures.
+        </li>
+        <li>
+          Prototype-Based-Inheritance : Used this type of inheritance , where
+          objects inherits properties from this prototype.
+        </li>
+      </ol>
+      <ul>
+        <h2>Web Development Features.</h2>
+        <li>DOM Manipulation (Document Object Model).</li>
+        <li>Event Handling (Clicking(Scrolling/Hovering)).</li>
+        <li>Fetch API/HTTP requests (To integrate API's).</li>
+        <li>
+          Web Storage - Access only by Js (To store data
+          temporarly(loclal/session/cookies)).
+        </li>
+      </ul>
+      <ul>
+        <h2>Modern Features.</h2>
+        <li>Async/Await.</li>
+        <li>Promises.</li>
+        <li>Classes (Objects).</li>
+        <li>Modules (Piece of code).</li>
+        <li>Typescript (Mentions Data types).</li>
+        <li>JSON (JavaScript Object Notation)</li>
+        <li>Error Handling.</li>
+        <li>Regular expression (Data type in Js).</li>
+      </ul>
+      <ul>
+        <li>
+          Free like structure of html/css that is called DOM , to change the
+          branches of that free, we should use Js.
+        </li>
+        <li>
+          Async/Await and Promises - are used when we do Asynchronous
+          operations.
+        </li>
+        <li>
+          JSON - Famous object notation used in interchanging the data between
+          the 2 systems.
+        </li>
+        <li>
+          Error Handling - Continues flow even we get error's in middle of
+          lines.
+        </li>
+        <li>Variable - To store the data/value or information.</li>
+      </ul>
+      <ul>
+        <h2>Things to follow in Variable is :</h2>
+        <li>Declaration - Will contains the name for the variable.</li>
+        <li>Assigning - Assign the value.</li>
+        <li>Intialisation - Doing declaration of assignment at a time.</li>
+        <li>
+          Types of Variable's:
+          <ol>
+            <li>Var.</li>
+            <li>Let.</li>
+            <li>Const.</li>
+          </ol>
+        </li>
+      </ul>
+      <ol>
+        <h2>Difference between undefined and not defined in JavaScript :</h2>
+        <li>
+          In JavaScript, they both are related to memory space and there is a
+          very simple difference between them. If the variable name which is
+          being accessed doesn’t exist in memory space then it would be not
+          defined, and if exists in memory space but hasn’t been assigned any
+          value till now, then it would be undefined.
+        </li>
+        <li>
+          Undefined : It is a JavaScript keyword that has a special meaning.
+          Everything which gets a space in memory will contain undefined until
+          we assign a value to that memory space.
+        </li>
+        <li>
+          The JavaScript code is being executed in two-phase :
+          <ul class="lis">
+            <li>
+              The first one is the memory allocation phase during this all the
+              variables and function definitions get stored inside the memory
+              heap. The JavaScript assigns undefined to each variable in this
+              phase.
+            </li>
+            <li>
+              The second one is a thread of the execution phase, during this the
+              code written inside the JavaScript file is being executed.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Each variable holds the value undefined till the program reaches the
+          line where we have assigned that variable. After that line, the
+          variable’s undefined value gets replaced by the original value.
+        </li>
+        <li>
+          Not defined: In JavaScript, it is one of the reference errors that
+          JavaScript will throw when someone accesses the variable which is not
+          inside the memory heap.
+        </li>
+      </ol>
+      <ol>
+        <h2>
+          Variable declaration in JavaScript follows certain rules and
+          guidelines :
+        </h2>
+        <li>
+          Declaration Types : JavaScript has three ways to declare variables:
+          <ul class="lis">
+            <li>var (old and less preferred)</li>
+            <li>let (block-scoped, preferred for most use cases)</li>
+            <li>const (block-scoped, for constants that don't change)</li>
+          </ul>
+        </li>
+        <li>
+          Variable Naming Rules :
+          <ul class="lis">
+            <li>
+              Alphanumeric and Underscores Only: Variable names can contain
+              letters, numbers, $, and _. They cannot contain spaces or special
+              characters.
+            </li>
+
+            <li>
+              Cannot Start with Numbers: Variable names cannot begin with
+              digits.
+            </li>
+            <li>
+              No Reserved Keywords: Variable names cannot use JavaScript
+              reserved words like class, var, let, const, etc.
+            </li>
+            <li>Case-Sensitive: Variable names are case-sensitive.</li>
+          </ul>
+        </li>
+        <li>
+          Scoping Rules :
+          <ul class="lis">
+            <li>
+              var: Function-scoped or globally scoped (does not respect block
+              scope).
+            </li>
+            <li>let and const: Block-scoped.</li>
+          </ul>
+        </li>
+        <li>
+          Hoisting :
+          <ul class="lis">
+            <li>
+              var: Declared variables are hoisted to the top of their scope and
+              initialized as undefined.
+            </li>
+            <li>
+              let and const: Declared variables are hoisted but remain in a
+              "temporal dead zone" until their declaration is encountered.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Best Practices :
+          <ul class="lis">
+            <li>Use const by default for variables that won't change.</li>
+            <li>Use let when the variable needs to be reassigned.</li>
+            <li>Avoid using var unless maintaining older code.</li>
+            <li>Always use descriptive, meaningful variable names.</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </body>
+</html>
